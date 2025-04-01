@@ -74,6 +74,42 @@ if id == "Elgordo.09":
         else:
             print("você foi reprovado.")
 
+        print("\nsexta experiencia do sexto momemento.sexta experiencia 06\n")
+
+        n1 = float(input("digite a primeira nota:"))
+        n2 = float(input("digite a segunda nota:"))
+        n3 = float(input("digite a segunda nota:"))
+
+        media = (n1 + n2 + n3) / 3
+
+        print(f"sua nota foi de {media}")
+
+        if media >= 7:
+            print("você foi aprovado.")
+
+        elif media <= 4:
+            print("você esta de recuperação")
+
+        else:
+            print("você foi reprovado.")
+
+        print("\nultima atividade.\n")
+
+        primeiro = input("primeiro time:")
+        segundo = input("segundo time:")
+        s1 = int(input(f"saldo de gols do {primeiro} time:"))
+        s2 = int(input(f"saldo de gols do {segundo} time:"))
+
+        print(f"o {primeiro} fez {s1}, já o {segundo} fez {s2}")
+
+        if s1 == s2:
+            print("ouve um empate dos times.")
+        else:
+            if s1 > s2:
+                print(f"o {primeiro} ganhou do {segundo} por {s1} a {s2}.")
+            else:
+                print(f"o {segundo} ganhou do {primeiro} por {s2} a {s1}.")
+
 
 
 
