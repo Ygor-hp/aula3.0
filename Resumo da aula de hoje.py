@@ -1,5 +1,3 @@
-from selectors import SelectSelector
-
 print("Diario do Aluno")
 id=input("Digite o id do aluno para entrar:")
 senha=input("Digite a senha do aluno para entrar:")
@@ -109,6 +107,33 @@ if id == "Elgordo.09":
                 print(f"o {primeiro} ganhou do {segundo} por {s1} a {s2}.")
             else:
                 print(f"o {segundo} ganhou do {primeiro} por {s2} a {s1}.")
+        print("Bem vindo ao posto ipiranga.\n")
+        litros = float(input("Quantos litros você abasteceu:  "))
+        combustivel = input("Digite g ou G para gasolina ou para etanol digite G ou g")
+
+        valE = 4.90
+        valG = 5.80
+        # Lembra que o or em modo de senha ou escolha so funciona direito se estiver as a mesma variavel no mesmo modo.
+        if combustivel == "E" or combustivel == "e":
+            v = valE * litros
+            print(f"o valor do etanol deu {v}")
+        else:
+            if combustivel == "G" or combustivel == "g":
+                s = valG * litros
+                print(f"o valor da gasolina deu {s}")
+            else:
+                print("ocorreu um ero no seu codigo")
+
+        print("nona atividade.\n")
+
+        numero = float(input("digite o numero:"))
+        resultado = numero % 2
+        if resultado == 0:
+            print("par")
+        else:
+            print("imp")
+
+
 
 
 
