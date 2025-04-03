@@ -1,17 +1,18 @@
 print("Bem vindo ao posto ipiranga.\n")
-l=float(input("Quantos litros você abasteceu:  "))
-q=input("Qual foi o tipo de combustivel,"
-        "se foi Etanol digite etanol se foi Gasolina digite gasolina: ")
+litros=float(input("Quantos litros você abasteceu:  "))
+combustivel=input("Digite g ou G para gasolina ou para etanol digite G ou g" )
 
-E=4.90
-G=5.80
 
-if q == "etanol":
-    v=E*l
+valE=4.90
+valG=5.80
+
+if combustivel == "E" or combustivel== "e":
+    v=valE*litros
     print(f"o valor do etanol deu {v}")
-elif q == "gasolina":
-    s =G*l
-    print(f"o valor da gasolina deu {s}")
+else:
+    if combustivel == "G" or combustivel== "g":
+        s =valG*litros
+        print(f"o valor da gasolina deu {s}")
 
 
 
