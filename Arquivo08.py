@@ -5,7 +5,7 @@ combustivel=input("Digite g ou G para gasolina ou para etanol digite G ou g" )
 
 valE=4.90
 valG=5.80
-
+# Lembra que o or em modo de senha ou escolha so funciona direito se estiver as a mesma variavel no mesmo modo.
 if combustivel == "E" or combustivel== "e":
     v=valE*litros
     print(f"o valor do etanol deu {v}")
